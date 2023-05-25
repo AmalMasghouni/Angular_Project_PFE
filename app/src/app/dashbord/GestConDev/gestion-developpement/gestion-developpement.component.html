@@ -1,0 +1,95 @@
+<div class="limiter">
+
+    <div class="container-table100">
+      <div class="wrap-table100">
+        <div class="table">
+          <div class="row header">
+            <div class="cell" >Nom Marque</div>
+          <div class="cell" >Etat Dev</div>
+          <div class="cell" >Réf CDC</div>
+          <div class="cell" > nomCDC</div>
+          <div class="cell" >DLL</div>
+          <div class="cell" >Famille</div>
+          <div class="cell" >Nom ECU</div>
+          <div class="cell" >BUG</div>
+          <div class="cell" >Développeur</div>
+          <div class="cell" style="width: 20%">Action</div>
+
+          <div class="row" *ngFor="let d of dev ">
+            <div class="cell" >{{d.n}}</div>
+            <div class="cell" >{{d.nomDev}}</div>
+            <div class="cell" >{{d.etatDev}}</div>
+            <div class="cell" >{{d.refCdc}}</div>
+            <div class="cell" >{{d.cdc}}</div>
+            <div class="cell" >{{d.nomDll}}</div>
+            <div class="cell" >{{d.famille}}</div>
+            <div class="cell" >{{d.ecu}}</div>
+            <div class="cell" >{{d.bug}}</div>
+            <div class="cell" >{{d.utilisateur}}</div>
+
+              <div class="cell mt-10"  >
+                <button class="badge badge-danger"><i class="fa fa-trash"></i> Supprimer</button>
+                <span class="button-space"></span>
+                <button class="  badge badge-warning"><i class="fa fa-edit"></i> modifier</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="limiter">
+
+      <div class="container-table100">
+        <div class="wrap-table100">
+          <div >
+            <div class="top flexertab" >
+                  <button class="btn-secondary" style="width: 100px;" routerLink="/GCD/ajout-vehicule"><i class="fa fa-add"></i>Ajouter </button>
+                  <button class="btn-secondary" style="background-color: #bdd248;" >Exporter En Excel </button>
+                <div class="top flexertab" >
+                  <input type="text" placeholder="Recherche par nom..." >
+                  <button class="btn-secondary" style="background-color: #AFB3B9;"type="button" ><i class="fa fa-search"></i>Rechercher</button>
+                </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="wrap-table100">
+          <div class="table">
+            <div class="row header">
+              <div class="cell"style="width: 40%" >N</div>
+              <div class="cell"style="width: 40%" >Nom Dev</div>
+              <div class="cell" style="width: 40%">Etat Dev</div>
+              <div class="cell"style="width: 40%" >Réf CDC</div>
+              <div class="cell" style="width: 40%"> nomCDC</div>
+              <div class="cell" style="width: 40%" >DLL</div>
+              <div class="cell"style="width: 40%" >Famille</div>
+              <div class="cell"style="width: 40%" >Nom ECU</div>
+              <div class="cell"style="width: 40%" >BUG</div>
+              <div class="cell"style="width: 40%" >Développeur</div>
+              <div class="cell" style="width: 20%">Action</div>
+
+            </div>
+             <div class="row" class="row" *ngFor="let d of dev " >
+              <div class="cell" >{{d.n}}</div>
+              <div class="cell" >{{d.nomDev}}</div>
+              <div class="cell" >{{d.etatDev}}</div>
+              <div class="cell" >{{d.refCdc}}</div>
+              <div class="cell" >{{d.cdc}}</div>
+              <div class="cell" >{{d.nomDll}}</div>
+              <div class="cell" >{{d.famille}}</div>
+              <div class="cell" >{{d.ecu}}</div>
+              <div class="cell" >{{d.bug}}</div>
+              <div class="cell" >{{d.utilisateur}}</div>
+                <div class="cell mt-10"  >
+                  <button class="badge badge-danger"><i class="fa fa-trash"></i> Supprimer</button>
+                  <span class="button-space"></span>
+                  <button class="  badge badge-warning"><i class="fa fa-edit"></i> modifier</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
